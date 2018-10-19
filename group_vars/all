@@ -1,29 +1,3 @@
-# ---------------------------
-# EC2
-# ---------------------------
-ec2:
-  key: macbookpro
-  zookeeper_instance_type: c3.xlarge
-  kafka_instance_type: r3.2xlarge
-  image: ami-9abea4fb
-  region: us-west-2
-  kafka_security_group: kafka
-  zookeeper_security_group: zookeeper
-  kafka_instance_count: 3
-  zookeeper_instance_count: 3
-  zk_spot_price: 0.5
-  kafka_spot_price: 0.8
-
-# ---------------------------
-# SSH
-# ---------------------------
-ssh_known_hosts_command: "ssh-keyscan -H -T 10"
-ssh_known_hosts_file: "/Users/mpathira/.ssh/known_hosts"
-
-# ---------------------------
-# Monitoring
-# ---------------------------
-influxdb_host: mugo.cs.indiana.edu
 
 #----------------------------
 #  JAVA
