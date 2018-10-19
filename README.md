@@ -1,11 +1,3 @@
-# Kafka on EC2
-
-Ansible scripts for deploying Kafka (v0.9.1 with Zookeeper 3.4.6) on EC2. These scripts were developed based on various resources from Internet. Below is the main reference:
-
-* [Ansible Playbook - Setup Kafka Cluster](http://whatizee.blogspot.com/2015/05/ansible-playbook-setup-kafka-cluster.html)
-
-
-
 # How To Run
 
 ## Prerequisites
