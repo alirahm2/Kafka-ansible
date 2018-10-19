@@ -1,0 +1,16 @@
+---
+
+# Create a zookeeper_user.
+- include_tasks: user.yml
+
+# Install from tar.gz file.
+- include_tasks: install.yml
+
+# Configure zookeeper with zoo.cfg and setting up directories.
+- include_tasks: configure.yml
+
+# Initializing - creating myid file for each zookeeper to run in a Cluster.
+- include_tasks: init.yml
+
+# Start Zookeper on all servers.
+- include_tasks: start.yml

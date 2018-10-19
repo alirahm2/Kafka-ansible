@@ -1,0 +1,8 @@
+---
+  # Create a user to running the zookeeper service.
+ #- name: remove Old users 
+ #  user: name=zkadmin state=absent remove=yes
+
+ - name: Create a User `"{{ zookeeper.user }}"` for all our Hadoop Modules.
+   user: name={{ zookeeper.user }} password={{ zookeeper.password}}
+

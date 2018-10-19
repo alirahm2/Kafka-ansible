@@ -1,0 +1,9 @@
+[kafka]
+10.110.10.198 broker_id=1 ansible_python_interpreter=/usr/bin/python3
+10.110.10.40  broker_id=2 ansible_python_interpreter=/usr/bin/python3
+10.110.9.65 broker_id=3 ansible_python_interpreter=/usr/bin/python3
+
+[zookeeper]
+10.110.14.33 zid=1 ansible_python_interpreter=/usr/bin/python3
+10.110.10.30 zid=2 ansible_python_interpreter=/usr/bin/python3
+10.110.9.169 zid=3 ansible_python_interpreter=/usr/bin/python3

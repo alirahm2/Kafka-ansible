@@ -1,0 +1,28 @@
+---
+# - name: Install JDK on Zookeeper instances
+#   hosts: all
+#   remote_user: ubuntu
+#   become: true
+#   become_method: sudo
+#   gather_facts: yes
+#   roles:
+#     - jdk
+
+# - name: Install and start Zookeeper
+#   hosts: zookeeper
+#   remote_user: ubuntu
+#   become: true
+#   become_method: sudo
+#   gather_facts: yes
+#   roles:
+#     - zookeeper
+
+ - name: Install and start Kafka
+   hosts: kafka
+   remote_user: ubuntu
+   become: true
+   become_method: sudo
+   gather_facts: yes
+   roles:
+     - kafka
+
