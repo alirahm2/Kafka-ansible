@@ -1,7 +1,7 @@
 ## Prerequisites
 
 * **Ansible Installation**
-* **Adding the SSH keys of kafka and zookeeper machines**
+* **Add the SSH keys of kafka and zookeeper machines**
 
 
 ## Steps
