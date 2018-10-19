@@ -15,5 +15,10 @@
     with_items:
       - "{{ zookeeper.data_store }}"
       - "{{ zookeeper.logging }}"
-#    notify:
-#      - Restart Zookeeper.
+
+
+  - name: Adding the path in the environment files
+    lineinfile: dest=/home/zkadmin/.bashrc line='export PATH=$PATH:{{ common.soft_link_base_path }}/zookeeper/bin/' insertafter='EOF' regexp='export PATH=\$PATH:{{ common.soft_link_base_path }}/zookeeper/bin/' state=present
+
+  - name: Source the enviroment file
+    shell: source /home/zkadmin/.bashrc

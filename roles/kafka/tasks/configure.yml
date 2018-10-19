@@ -17,3 +17,10 @@
 
   - name: Creating a directory for kafka
     file: path={{ kafka.data_store }}/{{ broker_id }} owner={{ kafka.user }} group={{ kafka.group }} state=directory
+
+
+  - name: Adding the path in the environment files
+    lineinfile: dest=/home/kafkaadmin/.bashrc line='export PATH=$PATH:{{ common.soft_link_base_path }}/kafka/bin/' insertafter='EOF' regexp='export PATH=\$PATH:{{ common.soft_link_base_path }}/kafka/bin/' state=present
+
+  - name: Source the enviroment file
+    shell: source /home/kafkaadmin/.bashrc
