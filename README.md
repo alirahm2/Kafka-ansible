@@ -1,11 +1,7 @@
-# How To Run
-
 ## Prerequisites
 
-* **Ansible**
-* **boto** - required for Ansible EC2 module
-* Setup boto configuration based on [http://boto.readthedocs.org/en/latest/boto_config_tut.html](http://boto.readthedocs.org/en/latest/boto_config_tut.html)
-* Access to EC2 Key Pair
+* **Ansible Installation**
+* **Adding the SSH keys of kafka and zookeeper machines**
 
 
 ## Steps
